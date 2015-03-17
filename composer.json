@@ -1,23 +1,23 @@
 {
     "name": "wells/l4-ldap-ntlm",
     "type": "library",
-    "description": "An LDAP/Active Directory/NTLM authentication driver for Laravel 4.",
-    "keywords": ["laravel", "L4", "LDAP", "Authentication", "Laravel 4", "auth"],
+    "description": "An LDAP/Active Directory/NTLM authentication driver for Laravel 5.",
+    "keywords": ["laravel", "L5", "LDAP", "Authentication", "Laravel 5", "auth"],
     "homepage": "https://github.com/wells/l4-ldap-ntlm",
     "license": "MIT",
     "authors": [
         {
-            "name": "Brian Wells",
-            "email": "wells@users.noreply.github.com"
+            "name": "Matt Shirey",
+            "email": "qwertytech@users.noreply.github.com"
         }
     ],
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "~4"
+        "illuminate/support": "~5"
     },
     "autoload": {
         "psr-0": {
-            "Wells\\L4LdapNtlm": "src/"
+            "Qwertytech\\L5LDAP": "src/"
         }
     },
     "minimum-stability": "dev"
