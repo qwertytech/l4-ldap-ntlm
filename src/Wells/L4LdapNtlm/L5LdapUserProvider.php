@@ -1,4 +1,4 @@
-<?php namespace Wells\L4LdapNtlm;
+<?php namespace Qwertytech\L5Ldap;
 
 use Illuminate\Auth\UserProviderInterface;
 use Illuminate\Auth\UserInterface;
@@ -10,7 +10,7 @@ use Illuminate\Auth\GenericUser;
  * @author Brian Wells (https://github.com/wells/)
  * 
  */
-class L4LdapNtlmUserProvider implements UserProviderInterface
+class L5LdapUserProvider implements UserProviderInterface
 {
 	/**
 	 * The Eloquent user model
