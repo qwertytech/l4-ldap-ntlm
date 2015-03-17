@@ -1,4 +1,4 @@
-<?php namespace Wells\L4LdapNtlm;
+<?php namespace Qwertytech\L5LDAP;
 
 use Illuminate\Auth\Guard;
 
@@ -8,7 +8,7 @@ use Illuminate\Auth\Guard;
  * @author Brian Wells (https://github.com/wells/)
  * 
  */
-class L4LdapNtlmGuard extends Guard
+class L5LDAPGuard extends Guard
 {
 	public function admin()
 	{
