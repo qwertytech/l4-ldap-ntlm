@@ -1,4 +1,4 @@
-<?php namespace Wells\L4LdapNtlm;
+<?php namespace Qwertytech\L5Ldap;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
  * @author Brian Wells (https://github.com/wells/)
  * 
  */
-class L4LdapNtlmServiceProvider extends ServiceProvider {
+class L5LdapServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -24,13 +24,13 @@ class L4LdapNtlmServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('wells/l4-ldap-ntlm');
+		$this->package('qwertytech/l5-ldap');
 
 		//Add the LDAP/NTLM Auth driver
 		$this->app['auth']->extend('ldap', function($app)
 		{
-			return new L4LdapNtlmGuard(
-				new L4LdapNtlmUserProvider(
+			return new L5LdapGuard(
+				new L5LdapUserProvider(
 					$app['config']->get('auth.ldap')
 				),
 				$app->make('session.store')
