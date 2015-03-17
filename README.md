@@ -1,7 +1,7 @@
-l4-ldap-ntlm
+l5-ldap
 ============
 
-An LDAP/Active Directory/NTLM authentication driver for Laravel 4.
+An LDAP/Active Directory authentication driver for Laravel 5.
 
 This package will enable you to have basic authentication with a config-based ACL for admin and viewers of any auth based portion of a Laravel 4 based site. In addition, the package is capable of tying into Apache based NTLM authentication. You will need to install and configure both `php5-ldap` and `libapache2-mod-auth-ntlm-winbind` for Apache2 (Visit http://goo.gl/SzkuVo for a tutorial). If it is not installed, the package should still operate.
 
@@ -12,7 +12,7 @@ To install this in your application add the following to your `composer.json` fi
 
 ```json
 require {
-	"wells/l4-ldap-ntlm": "dev-master"
+	"qwertytech/l5-ldap": "dev-master"
 }
 ```
 
@@ -22,7 +22,7 @@ Once you have finished downloading the package from Packagist.org you need to te
 
 Open `app/config/app.php` and add:
 
-`Wells\L4LdapNtlm\L4LdapNtlmServiceProvider`
+`Qwertytech\L5Ldap\L5LdapServiceProvider`
 
 This tells Laravel 4 to use the service provider from the vendor folder.
 
@@ -37,7 +37,7 @@ Add the following config into your `app/config/auth.php` file
 
 ```js
 /**
- * LDAP Configuration for wells/l4-ldap-ntlm
+ * LDAP Configuration for qwertytech/l5-ldap
  */
 'ldap' => array(
 	// Domain controller (host), Domain to search (domain), 
